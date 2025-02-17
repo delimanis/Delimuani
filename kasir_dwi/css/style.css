@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #8e44a6, #3498db);
+    color: #fff;
+    margin: 0;
+}
+
+.login-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Increased width of the form */
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%; /* Ensures inputs are full width */
+    padding: 12px; /* Increases padding for more space */
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+img {
+    width: 80px; /* Set the logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #3498db;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+input:focus ~ .underline {
+    transform: scaleX(1);
+}
+
+.login-button, .cancel-button {
+    width: 100%; /* Makes buttons the same width as the inputs */
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button {
+    background: linear-gradient(135deg, #8e44a6, #3498db);
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-button:hover {
+    background: #3498db;
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    background: #e74c3c;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cancel-button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
